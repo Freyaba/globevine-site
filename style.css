@@ -181,3 +181,15 @@ html,body{overflow-x:clip}main.fun{overflow-x:clip}
 .hero .wrap>div:first-child{min-width:0}
 @media (min-width:900px){.bottles{justify-content:space-between;overflow-x:visible}}
 @media (prefers-reduced-motion:reduce){.marquee .track span:nth-child(n+9){display:none}.marquee .track{padding-block:10px;font-size:.95rem;row-gap:4px}}
+
+/* Calmer pass: no tilting or floating */
+.hero .phone.tilt-right,.hero .phone.tilt-left{animation:none!important}
+.hero .phone.tilt-right{transform:rotate(4deg)}
+.hero .phone.tilt-left{transform:rotate(-6deg) translate(-58px,34px)}
+.chips li:nth-child(odd),.chips li:nth-child(even){transform:none}
+.chips li:hover{transform:none}
+.vibe.v1,.vibe.v2,.vibe.v3{transform:none;margin-left:0}
+.vibe:hover{transform:none;box-shadow:5px 5px 0 var(--text)}
+.fun .card:nth-child(odd),.fun .card:nth-child(even){transform:none}
+.fun .card:hover{transform:translateY(-3px);box-shadow:5px 8px 0 var(--text)}
+.fun h1{font-size:clamp(2.3rem,5vw,3.5rem)}
